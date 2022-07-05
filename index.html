@@ -1,59 +1,65 @@
-<!doctype html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-	<title>TSDS-42183 Saki Yanase 柳瀬早紀 – 甘いふくらみ</title>
-	<meta charset="UTF-8">
-	<link rel="icon" type="image/png" href="https://i.imgur.com/H9cszkT.png"/>
-	<link rel="image_src" href="https://cdne-pics.youjizz.com/7/d/8/7d870f86f3221a589ffbfed9466797341607776682-1280-720-2067-h264.mp4-9.jpg"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-	<meta property="og:title" content="TSDS-42183 Saki Yanase 柳瀬早紀 – 甘いふくらみ"/>
-	<meta property="og:image" content="https://cdne-pics.youjizz.com/7/d/8/7d870f86f3221a589ffbfed9466797341607776682-1280-720-2067-h264.mp4-9.jpg"/>
-	<meta property="og:url" content="http://gravureidol888.blogspot.com"/>
-	<meta property="og:site_name" content="Japanes Gravure Idol"/>
-	<script src="https://cdn.xtemus.com/jquery.min.js"></script>
-	<style type="text/css" media="screen">html,body{padding:0;margin:0;height:100%}#apicodes-player{width:100%!important;height:100%!important;overflow:hidden;background-color:#000}.jw-menu,.jw-time-tip{padding:.5em!important}</style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script type="text/javascript" charset="utf-8" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+  <title>Player epl1</title>
+<style type="text/css">
+		html {
+        background-color: #000000;
+        background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		-o-background-size: 100% 100%, auto;
+		-moz-background-size: 100% 100%, auto;
+		-webkit-background-size: 100% 100%, auto;
+		background-size: 100% 100%, auto;
+}		
+        body{
+	    margin:5 auto;
+        padding:5 auto;		
+}
+	  	
+</style>   
 </head>
 <body>
-<script type="text/javascript" src="https://cdn.xtemus.com/jwplayer.js"></script>
-					<script type="text/javascript">jwplayer.key="w51hNXyL+ilJTlNDYNetRp9M/zfZCk/MH1sYlg==";</script>
-					<div id="apicodes-player"></div>
-					<script type="text/javascript">
-						var player = jwplayer("apicodes-player");
-						player.setup({
-							file: "https://abre-videos.cdn1122.com/_hls/videos/7/d/8/7/0/7d870f86f3221a589ffbfed9466797341607776682-,426-240-347,640-360-598,852-480-857,1280-720-1661,-h264.mp4.urlset/master.m3u8?validfrom=1656879541&validto=1657052341&rate=36864&hdl=-1&hash=%2FP0wSjtJiauWBsH%2BsvDh3EgXVCw%3D",
-							title: "TSDS-42183 Saki Yanase 柳瀬早紀 – 甘いふくらみ",
-							image: "https://cdne-pics.youjizz.com/7/d/8/7d870f86f3221a589ffbfed9466797341607776682-1280-720-2067-h264.mp4-9.jpg",
-							aspectratio: "16:9",
-							startparam: "start",
-							primary: "html5",
-							setFullscreen: true,
-							height: "100%",
-							width: "100%",
-							preload: "auto",
-						    captions: {
-						        color: "#f3f368",
-						        fontSize: 16,
-						        backgroundOpacity: 0,
-						        fontfamily: "Helvetica",
-						        edgeStyle: "raised"
-						    },
-							logo: {
-								file:"https://i.imgur.com/1JKleWY.png",
-								hide:false,
-								link:"https://www.xtemus.com",
-								margin:"20",
-								position:"top-right"
-									},
-						    tracks: [{ 
-						        file: "", 
-						        label: "English",
-						        kind: "captions"
-							   },]
-						});
-						player.on("error" , function(){
-							alert("Error link!");
-						});
-					</script>
 
+<CENTER>
+<div style="overflow:hidden;width="100%"  height="100%">
+  <div id="player-wrapper"></div>
+</div>
+<script type="text/javascript" charset="utf-8">
+window.onload = function() {
+
+  var player = new Clappr.Player({
+    parentId: '#player-wrapper',
+    source: 'https://mediasv.online/stream_live/600_eng1/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9Ny8zLzIwMjIgODoyOTowNiBBTSZoYXNoX3ZhbHVlPTA5WEtqd2RSU3hIeEdIbVB5YllaS1E9PSZ2YWxpZG1pbnV0ZXM9ODY0MDAwMDAmc3RybV9sZW49MjAmaWQ9Y2hfMjE0ODk=',
+	hideMediaControl: true,
+    autoPlay: true,
+	
+  });
+
+  function resizePlayer(){
+    var aspectRatio = 9/16,
+    newWidth = document.getElementById('player-wrapper').parentElement.offsetWidth,
+    newHeight = 2 * Math.round(newWidth * aspectRatio/2);
+    player.resize({width: newWidth, height: newHeight});
+  }
+
+  resizePlayer();
+  window.onresize = resizePlayer; 
+
+}
+</script>
+<script>
+(function () {
+    var src = 'node_modules/eruda/dist/eruda.min.js';
+    if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+})();
+</script>
+</CENTER>
 </body>
 </html>
